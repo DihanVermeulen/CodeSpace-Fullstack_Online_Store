@@ -9,14 +9,19 @@ import {
   Link,
 } from "react-router-dom";
 import { Home } from './routes/home';
+import { Login } from './routes/login';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
- <RouterProvider router={router}/>
+  <RouterProvider router={router} />
 )
