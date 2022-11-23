@@ -1,5 +1,9 @@
+import logo from '../../assets/logo.png';
+
 export const Navbar: React.FC = () => {
     return (
-        <div>Navbar</div>
+        <nav>
+            <img className='logo' src={logo} alt="logo" />
+        </nav>
     )
 }
