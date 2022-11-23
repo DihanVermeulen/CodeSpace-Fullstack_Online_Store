@@ -2,6 +2,7 @@ import cat_paw_hovering_card from '../assets/images/cat_paw_hovering_card.svg';
 import nft1 from '../assets/images/nft_1.png';
 import nft2 from '../assets/images/nft_2.png';
 import nft3 from '../assets/images/nft_3.png';
+import { Button } from "@material-tailwind/react";
 
 export const Home: React.FC = () => {
     return (
@@ -24,18 +25,30 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col items-center'>
-                <div className='w-9/12 lg:w-1/3 mb-3'>
+            <section className='flex h-screen flex-col items-center justify-center'>
+                <div className='mb-3 flex flex-col items-center'>
                     <h2 className='text-4xl lg:text-6xl text-center'>About our <b className='gradient-text'>platform</b></h2>
-                    <p className='text-gray-500 text-center lg:text-xl'>This platform was heavily inspired by the love
+                    <p className='text-gray-400 text-center text-xl lg:text-xl w-9/12 lg:w-1/3'>This platform was heavily inspired by the love
                         that the community has for cats, so we decided
                         to put that love into something we also love.</p>
                 </div>
                 <article className='flex flex-row justify-evenly'>
-                   <img className='w-1/4' src={nft1} />
-                   <img className='w-1/4' src={nft2} />
-                   <img className='w-1/4' src={nft3} />
+                    <img className='w-1/4' src={nft1} />
+                    <img className='w-1/4' src={nft2} />
+                    <img className='w-1/4' src={nft3} />
                 </article>
+            </section>
+
+            <section className='h-screen flex flex-row items-center'>
+                <div className='ml-36'>
+                    <h2 className='text-4xl lg:text-6xl'>What is an NFT?</h2>
+                    <p className='text-gray-400 text-xl w-2/3 mb-5'>
+                        Non-fungible-token <br />
+                        An NFT is a anything digital that is unique and cannot be replaced. NFTs can be bought, sold or even traded.
+                    </p>
+                    <Button variant='gradient'>Get Started</Button>
+                </div>
+                <div className='w-60 h-60 rounded-full border-2 border-cyan-300 -translate-x-80 -translate-y-32'></div>
             </section>
         </div>
     )
