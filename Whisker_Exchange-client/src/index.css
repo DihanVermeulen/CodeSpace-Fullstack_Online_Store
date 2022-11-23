@@ -27,6 +27,12 @@ body {
   margin: .5rem;
 }
 
+.gradient-text {
+  background: -webkit-linear-gradient(#eee, var(--secondary-colour));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
