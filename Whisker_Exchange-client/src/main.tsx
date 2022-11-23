@@ -10,16 +10,23 @@ import {
 import { Home } from './routes/Home';
 import { Login } from './routes/Login';
 import ErrorPage from './routes/ErrorPage';
+import { Root } from './routes/Root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/login",
-    element: <Login />
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "home",
+        element: <Home />
+      },
+      {
+        path: "/login",
+        element: <Login />
+      }
+    ]
   }
 ])
 
