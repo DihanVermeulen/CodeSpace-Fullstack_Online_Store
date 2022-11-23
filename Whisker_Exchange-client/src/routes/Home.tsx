@@ -1,9 +1,11 @@
-import { HeroSection } from "../components/HeroSection/HeroSection";
 import cat_paw_hovering_card from '../assets/images/cat_paw_hovering_card.svg';
+import nft1 from '../assets/images/nft_1.png';
+import nft2 from '../assets/images/nft_2.png';
+import nft3 from '../assets/images/nft_3.png';
 
 export const Home: React.FC = () => {
     return (
-        <div className="w-screen">
+        <div>
             <section className="h-screen flex flex-col sm:flex-row">
                 <div className="flex flex-col items-center w-screen">
                     <div className="m-5 lg:m-16 m-md-12 font-poppins">
