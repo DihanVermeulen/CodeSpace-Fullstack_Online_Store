@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { XMarkIcon, HomeIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import { SidebarData } from './SidebarData';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,9 @@ export default function Sidenav() {
     const [open, setOpen] = useState(true)
 
     return (
+            <div>
+                <Bars3Icon className='text-gray-300 w-6 h-6 m-3 hover:text-white sm:hidden absolute right-0 top-0' onClick={() => setOpen(!open)}/>
+            </div>
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={setOpen}>
                 <Transition.Child
