@@ -1,4 +1,4 @@
-import cat_paw_hovering_card from '../assets/images/cat_paw_hovering_card.svg';
+import cat_paw_hovering_card from '../assets/images/cat_paw_hovering_card.png';
 import nft1 from '../assets/images/nft_1.png';
 import nft2 from '../assets/images/nft_2.png';
 import nft3 from '../assets/images/nft_3.png';
@@ -48,7 +48,10 @@ export const Home: React.FC = () => {
                     </p>
                     <Button variant='gradient'>Get Started</Button>
                 </div>
-                <div className='w-60 h-60 rounded-full border-2 border-cyan-300 -translate-x-80 -translate-y-32'></div>
+                <a href='https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq' target='_blank'>
+                <div className='w-60 h-60 rounded-full border-2 flex flex-row justify-center items-center border-cyan-300 
+                -translate-x-80 -translate-y-32 cursor-pointer'>Find Out More</div>
+                </a>
             </section>
         </div>
     )
