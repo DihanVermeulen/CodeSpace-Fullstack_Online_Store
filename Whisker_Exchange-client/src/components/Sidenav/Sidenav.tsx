@@ -5,7 +5,7 @@ import { SidebarData } from './SidebarData';
 import { Link } from 'react-router-dom';
 
 export default function Sidenav() {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     return (
         <nav>
@@ -68,7 +68,7 @@ export default function Sidenav() {
 
                                             <div className="relative flex-1">
                                                 {SidebarData.map((item: any, index: any) => (
-                                                    <li key={index} className='flex flex-row w-full border-b bg-grey-500 border-slate-500 hover:bg-gray-500'>
+                                                    <li key={index} className='flex flex-row w-full p-2 border-b bg-grey-500 border-slate-500 hover:bg-gray-500'>
                                                         <Link className='flex flex-row' to={item.path}>
                                                             {item.icon}
                                                             <span>{item.title}</span>
