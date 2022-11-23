@@ -3,13 +3,13 @@ import { HomeIcon, ShoppingBagIcon, ArrowRightOnRectangleIcon, ArrowLeftOnRectan
 export const SidebarData:any = [
     {
         title: "Home",
-        path: "/",
+        path: "/home",
         icon: <HomeIcon className='h-6 w-6 mx-5'/>,
         cName: "nav-text"
     },
     {
         title: "Products",
-        path: "/",
+        path: "/products",
         icon: <ShoppingBagIcon className='h-6 w-6 mx-5' />,
         cName: "nav-text"
     },
