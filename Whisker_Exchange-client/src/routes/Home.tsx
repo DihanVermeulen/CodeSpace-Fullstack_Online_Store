@@ -18,8 +18,22 @@ export const Home: React.FC = () => {
                 </div>
 
                 <div className="w-full flex flex-col items-end">
-                    <img src={cat_paw_hovering_card} className='w-96 lg:w-10/12 lg:h-6/12' />
+                    <img src={cat_paw_hovering_card} className='w-96 lg:w-9/12' />
                 </div>
+            </section>
+
+            <section className='flex flex-col items-center'>
+                <div className='w-9/12 lg:w-1/3 mb-3'>
+                    <h2 className='text-4xl lg:text-6xl text-center'>About our <b className='gradient-text'>platform</b></h2>
+                    <p className='text-gray-500 text-center lg:text-xl'>This platform was heavily inspired by the love
+                        that the community has for cats, so we decided
+                        to put that love into something we also love.</p>
+                </div>
+                <article className='flex flex-row justify-evenly'>
+                   <img className='w-1/4' src={nft1} />
+                   <img className='w-1/4' src={nft2} />
+                   <img className='w-1/4' src={nft3} />
+                </article>
             </section>
         </div>
     )
