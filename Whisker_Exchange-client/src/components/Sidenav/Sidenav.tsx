@@ -10,7 +10,7 @@ export default function Sidenav() {
     return (
         <nav>
             <div>
-                <Bars3Icon className='text-gray-300 w-6 h-6 m-3 hover:text-white sm:hidden absolute right-0 top-0' onClick={() => setOpen(!open)}/>
+                <Bars3Icon className='text-gray-300 w-8 h-8 m-3 hover:text-white sm:hidden absolute right-0 top-0' onClick={() => setOpen(!open)}/>
             </div>
             <Transition.Root show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={setOpen}>
