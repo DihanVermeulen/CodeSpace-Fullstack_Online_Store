@@ -29,21 +29,32 @@ export const Navbar: React.FC = () => {
 
     return (
         <Transition.Root show={show}>
+            <Transition.Child
+                as={Fragment}
+                enter="transform transition ease-in-out duration-300 sm:duration-300"
+                enterFrom="-translate-y-10"
+                enterTo="translate-y-0"
+                leave="transform transition ease-in duration-300 sm:duration-300"
+                leaveFrom="-translate-y-0"
+                leaveTo="-translate-y-full"
+            >
 
-            <nav className='flex flex-row items-center fixed top-0 w-screen'>
-                <img className='logo' src={logo} alt="logo" />
-                <ul className='flex flex-row ml-auto mr-5 hidden sm:flex'>
-                    {NavbarData.map((item: any, index: any) => (
-                        <li className='list-none'>
-                            <Link className='flex flex-row cursor-pointer' to={item.path}>
-                                {item.icon}
-                                <span>{item.title}</span>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <Sidenav />
-            </nav>
+
+                <nav className='flex flex-row items-center fixed top-0 w-screen'>
+                    <img className='logo' src={logo} alt="logo" />
+                    <ul className='flex flex-row ml-auto mr-5 hidden sm:flex'>
+                        {NavbarData.map((item: any, index: any) => (
+                            <li className='list-none'>
+                                <Link className='flex flex-row cursor-pointer' to={item.path}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                    <Sidenav />
+                </nav>
+            </Transition.Child>
         </Transition.Root>
     )
 }
