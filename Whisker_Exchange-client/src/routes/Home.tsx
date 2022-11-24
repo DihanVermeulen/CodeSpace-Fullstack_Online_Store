@@ -58,16 +58,16 @@ export const Home: React.FC = () => {
             </section>
 
             <section className='h-screen flex flex-col items-center justify-center'>
-                <div className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
+                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
                     <img src={secured} alt='secured' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>100% Secured</h3>
                         <p className='text-gray-400 text-lg'>All of your payments are handled securely
                             so that you don’t have to worry!</p>
                     </div>
-                </div>
+                </article>
 
-                <div className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
+                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
                     <img src={star} alt='star' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>Rewards</h3>
@@ -76,9 +76,9 @@ export const Home: React.FC = () => {
                             upon every successful purchase
                         </p>
                     </div>
-                </div>
+                </article>
 
-                <div className='flex flex-row hover:bg-gray-500/50 items-center w-1/2 p-3 rounded'>
+                <article className='flex flex-row hover:bg-gray-500/50 items-center w-1/2 p-3 rounded'>
                     <img src={transfer} alt='transfer' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>Balance Transfer</h3>
@@ -87,7 +87,7 @@ export const Home: React.FC = () => {
                             that transfers can be as fast and efficient as possible
                         </p>
                     </div>
-                </div>
+                </article>
             </section>
         </div>
     )
