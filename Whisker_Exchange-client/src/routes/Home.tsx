@@ -9,8 +9,8 @@ import transfer from '../assets/icons/transfer.svg';
 
 export const Home: React.FC = () => {
     return (
-        <div>
-            <section className="h-screen flex flex-col sm:flex-row overflow-x-none">
+        <div className='mt-20'>
+            <section className="flex flex-col sm:flex-row overflow-x-none">
                 <div className="flex flex-col w-screen">
                     <div className="lg:m-16 md:m-12 font-poppins">
                         <div className="p-1 text-xs mb-2 flex items-center bg-gray-800/40 bg-gradient-to-r from-gray-700 w-64 rounded">
