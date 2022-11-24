@@ -61,10 +61,6 @@ export default function Sidenav() {
 
                                         </Transition.Child>
                                         <div className="flex h-full flex-col overflow-y-scroll text-slate-200 bg-gray-800 shadow-xl">
-                                            {/* <div className="px-4 sm:px-6">
-                                            <Dialog.Title className="text-lg font-medium">Panel title</Dialog.Title>
-                                            
-                                        </div> */}
 
                                             <div className="relative flex-1">
                                                 {SidebarData.map((item: any, index: any) => (
