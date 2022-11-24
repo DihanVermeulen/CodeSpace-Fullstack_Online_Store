@@ -1,3 +1,18 @@
 .font-poppins {
     font-family: 'Poppins', sans-serif;
 }
+
+.blue-gradient {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+    filter: blur(123px);
+}
+
+.pink-gradient {
+    background: linear-gradient(90deg, #f4c4f3 0%, #cc24ff 100%);
+    filter: blur(800px);
+}
+
+.white-gradient {
+    background: rgba(255, 255, 255, .5);
+    filter: blur(750px);
+}
