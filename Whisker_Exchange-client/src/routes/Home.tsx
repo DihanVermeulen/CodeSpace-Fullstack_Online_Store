@@ -52,9 +52,42 @@ export const Home: React.FC = () => {
                     <Button variant='gradient'>Get Started</Button>
                 </div>
                 <a href='https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq' target='_blank'>
-                <div className='w-60 h-60 rounded-full border-2 flex flex-row justify-center items-center border-cyan-300 
+                    <div className='w-60 h-60 rounded-full border-2 flex flex-row justify-center items-center border-cyan-300 
                 -translate-x-80 -translate-y-32 cursor-pointer'>Find Out More</div>
                 </a>
+            </section>
+
+            <section className='h-screen flex flex-col items-center justify-center'>
+                <div className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
+                    <img src={secured} alt='secured' className='lg:w-16 lg:h-16 pr-3' />
+                    <div className='flex flex-col justify-start'>
+                        <h3 className='lg:text-2xl'>100% Secured</h3>
+                        <p className='text-gray-400 text-lg'>All of your payments are handled securely
+                            so that you don’t have to worry!</p>
+                    </div>
+                </div>
+
+                <div className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
+                    <img src={star} alt='star' className='lg:w-16 lg:h-16 pr-3' />
+                    <div className='flex flex-col justify-start'>
+                        <h3 className='lg:text-2xl'>Rewards</h3>
+                        <p className='text-gray-400 text-lg'>
+                            We want you to have the best, so we offer rewards
+                            upon every successful purchase
+                        </p>
+                    </div>
+                </div>
+
+                <div className='flex flex-row hover:bg-gray-500/50 items-center w-1/2 p-3 rounded'>
+                    <img src={transfer} alt='transfer' className='lg:w-16 lg:h-16 pr-3' />
+                    <div className='flex flex-col justify-start'>
+                        <h3 className='lg:text-2xl'>Balance Transfer</h3>
+                        <p className='text-gray-400 text-lg'>
+                            Our payment systems work with etherium, so
+                            that transfers can be as fast and efficient as possible
+                        </p>
+                    </div>
+                </div>
             </section>
         </div>
     )
