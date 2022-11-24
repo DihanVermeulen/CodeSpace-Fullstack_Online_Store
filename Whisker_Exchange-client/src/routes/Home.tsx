@@ -3,6 +3,9 @@ import nft1 from '../assets/images/nft_1.png';
 import nft2 from '../assets/images/nft_2.png';
 import nft3 from '../assets/images/nft_3.png';
 import { Button } from "@material-tailwind/react";
+import secured from '../assets/icons/secured.svg';
+import star from '../assets/icons/star.svg';
+import transfer from '../assets/icons/transfer.svg';
 
 export const Home: React.FC = () => {
     return (
