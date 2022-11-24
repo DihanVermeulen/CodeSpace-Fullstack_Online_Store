@@ -10,20 +10,20 @@ import transfer from '../assets/icons/transfer.svg';
 export const Home: React.FC = () => {
     return (
         <div>
-            <section className="h-screen flex flex-col sm:flex-row">
-                <div className="flex flex-col items-center w-screen">
-                    <div className="m-5 lg:m-16 m-md-12 font-poppins">
+            <section className="h-screen flex flex-col sm:flex-row overflow-x-none">
+                <div className="flex flex-col w-screen">
+                    <div className="lg:m-16 md:m-12 font-poppins">
                         <div className="p-1 text-xs mb-2 flex items-center bg-gray-800/40 bg-gradient-to-r from-gray-700 w-64 rounded">
                             <div className="flex justify-center items-center bg-gray-500/40 rounded-full w-6 h-6"><b className='gradient-text text-base'>%</b></div>
                             <div className="ml-2"><b>20%</b> Discount for your <b>first purchase</b></div>
                         </div>
-                        <h1 className="text-5xl lg:text-7xl">NEXT</h1>
-                        <h1 className="gradient-text my-3 text-5xl lg:text-7xl">GENERATION</h1>
-                        <h1 className="text-5xl lg:text-6xl">NFT EXCHANGING.</h1>
+                        <h1 className="text-4xl lg:text-7xl">NEXT</h1>
+                        <h1 className="gradient-text my-3 text-4xl lg:text-7xl">GENERATION</h1>
+                        <h1 className="text-4xl lg:text-6xl">NFT EXCHANGING.</h1>
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col items-end">
+                <div className="w-full flex flex-col items-end overflow-hidden">
                     <img src={cat_paw_hovering_card} className='w-96 lg:w-9/12' />
                 </div>
             </section>
@@ -43,22 +43,23 @@ export const Home: React.FC = () => {
             </section>
 
             <section className='h-screen flex flex-row items-center'>
-                <div className='ml-36'>
+                <div className='ml:24 lg:ml-36'>
                     <h2 className='text-4xl lg:text-6xl'>What is an NFT?</h2>
-                    <p className='text-gray-400 text-xl w-2/3 mb-5'>
+                    <p className='text-gray-400 lg:text-xl lg:w-2/3 mb-5'>
                         Non-fungible-token <br />
                         An NFT is a anything digital that is unique and cannot be replaced. NFTs can be bought, sold or even traded.
                     </p>
                     <Button variant='gradient'>Get Started</Button>
                 </div>
+
                 <a href='https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq' target='_blank'>
-                    <div className='w-60 h-60 rounded-full border-2 flex flex-row justify-center items-center border-cyan-300 
-                -translate-x-80 -translate-y-32 cursor-pointer'>Find Out More</div>
+                    <div className='lg:w-60 lg:h-60 w-32 h-32 rounded-full border-2 flex flex-row justify-center items-center border-cyan-300 
+                lg:-translate-x-80 lg:-translate-y-32 cursor-pointer'>Find Out More</div>
                 </a>
             </section>
 
             <section className='h-screen flex flex-col items-center justify-center'>
-                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
+                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded lg:w-1/2'>
                     <img src={secured} alt='secured' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>100% Secured</h3>
@@ -67,7 +68,7 @@ export const Home: React.FC = () => {
                     </div>
                 </article>
 
-                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded w-1/2'>
+                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded lg:w-1/2'>
                     <img src={star} alt='star' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>Rewards</h3>
@@ -78,7 +79,7 @@ export const Home: React.FC = () => {
                     </div>
                 </article>
 
-                <article className='flex flex-row hover:bg-gray-500/50 items-center w-1/2 p-3 rounded'>
+                <article className='flex flex-row hover:bg-gray-500/50 items-center p-3 rounded lg:w-1/2'>
                     <img src={transfer} alt='transfer' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>Balance Transfer</h3>
@@ -87,6 +88,17 @@ export const Home: React.FC = () => {
                             that transfers can be as fast and efficient as possible
                         </p>
                     </div>
+                </article>
+            </section>
+
+            <section className='flex flex-row justify-center items-center'>
+                <article className='w-2/3 bg-gray-500/50'>
+                    <h2 className='text-xl'>Try our service now!</h2>
+                    <p>
+                        We promise to provide the best service and customer
+                        support we can so that you don’t have
+                        to ever worry about a thing!
+                    </p>
                 </article>
             </section>
         </div>
