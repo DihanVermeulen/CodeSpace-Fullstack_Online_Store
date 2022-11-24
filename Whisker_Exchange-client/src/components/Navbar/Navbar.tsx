@@ -5,7 +5,7 @@ import { NavbarData } from './NavbarData';
 
 export const Navbar: React.FC = () => {
     return (
-        <nav className='flex flex-row items-center'>
+        <nav className='flex flex-row items-center absolute top-0 w-screen'>
             <img className='logo' src={logo} alt="logo" />
             <ul className='flex flex-row ml-auto mr-5 hidden sm:flex'>
                 {NavbarData.map((item: any, index: any) => (
