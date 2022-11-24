@@ -6,6 +6,7 @@ import { Button } from "@material-tailwind/react";
 import secured from '../assets/icons/secured.svg';
 import star from '../assets/icons/star.svg';
 import transfer from '../assets/icons/transfer.svg';
+import '../utils/utils.css';
 
 export const Home: React.FC = () => {
     return (
@@ -23,14 +24,18 @@ export const Home: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col items-end overflow-hidden">
-                    <img src={cat_paw_hovering_card} className='w-96 lg:w-9/12' />
+                <div className="flex relative md:my-0 my-10">
+                    <div className='absolute top-0 w-2/3 h-1/2 z-0 pink-gradient' />
+                    <div className='absolute rounded-full w-full h-5/6 bottom-40 z-10 white-gradient' />
+                    <div className='absolute w-1/2 h-1/2 right-64 bottom-32 z-0 blue-gradient' />
+                    {/* <img src={cat_paw_hovering_card} className='w-96 lg:w-9/12 z-20' /> */}
+                    <img src={cat_paw_hovering_card} className='relative w-full z-20' />
                 </div>
             </section>
 
             <section className='flex h-screen flex-col items-center justify-center'>
                 <div className='mb-3 flex flex-col items-center'>
-                    <h2 className='text-4xl lg:text-6xl text-center'>About our <b className='gradient-text'>platform</b></h2>
+                    <h2 className='text-4xl lg:text-6xl text-center z-30'>About our <b className='gradient-text'>platform</b></h2>
                     <p className='text-gray-400 text-center text-xl lg:text-xl w-9/12 lg:w-1/3'>This platform was heavily inspired by the love
                         that the community has for cats, so we decided
                         to put that love into something we also love.</p>
