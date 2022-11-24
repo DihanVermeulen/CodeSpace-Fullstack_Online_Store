@@ -1,68 +1,68 @@
 import { LockClosedIcon } from "@heroicons/react/24/outline";
+import { Input } from "@material-tailwind/react";
 
 export const Register: React.FC = () => {
     return (
         <div className="h-screen flex flex-col items-center justify-center text-center">
             <h1 className="text-xl lg:text-2xl font-bold">Create account</h1>
             <p>Or <a className="text-cyan-300" href='/login'>Go to login</a></p>
-            <form className="space-y-6 lg:w-1/3" action="#" method="POST">
+            <form className="lg:w-1/3" action="#" method="POST">
                 <input type="hidden" name="remember" defaultValue="true" />
-                <div className="-space-y-px rounded-md shadow-sm">
-                    <div>
+                <div className="rounded-md shadow-sm">
+                    <div className="mb-4">
                         <label htmlFor="email-address" className="sr-only">
                             Name
                         </label>
-                        <input
+                        <Input
+                            variant="outlined"
                             id="name"
                             name="name"
                             type="text"
-                            autoComplete="name"
                             required
-                            className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                            placeholder="Name"
+                            label="Name"
+                            className="sm:text-sm"
                         />
                     </div>
-                    <div>
+
+                    <div className="mb-4">
                         <label htmlFor="surname" className="sr-only">
                             Surname
                         </label>
-                        <input
+                        <Input
+                            variant="outlined"
                             id="surname"
                             name="surname"
                             type="text"
-                            autoComplete="surname"
                             required
-                            className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                            placeholder="Surname"
+                            label="Surname"
+                            className="sm:text-sm"
                         />
                     </div>
-                    <div>
+                    <div className="mb-4">
                         <label htmlFor="email-address" className="sr-only">
                             Email address
                         </label>
-                        <input
-                            id="email-address"
+                        <Input
+                            variant="outlined"
+                            id="email"
                             name="email"
-                            type="email"
-                            autoComplete="email"
+                            type="text"
                             required
-                            className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                            placeholder="Email address"
-                        />
+                            label="Email"
+                            className="sm:text-sm" />
                     </div>
-                    <div>
+                    <div className="mb-10">
                         <label htmlFor="password" className="sr-only">
                             Password
                         </label>
-                        <input
+                        <Input
+                            variant="outlined"
                             id="password"
                             name="password"
                             type="password"
-                            autoComplete="current-password"
                             required
-                            className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                            placeholder="Password"
-                        />
+                            label="Password"
+                            className="sm:text-sm" />
                     </div>
                 </div>
 
