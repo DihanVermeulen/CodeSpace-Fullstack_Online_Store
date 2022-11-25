@@ -12,6 +12,7 @@ import { Login } from './routes/Login';
 import ErrorPage from './routes/ErrorPage';
 import { Root } from './routes/Root';
 import { Register } from './routes/Register';
+import { Products } from './routes/Products';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "home",
+        path: "/home",
         element: <Home />
       },
       {
@@ -28,8 +29,12 @@ const router = createBrowserRouter([
         element: <Login />
       },
       {
-        path: 'register',
+        path: '/register',
         element: <Register />
+      },
+      {
+        path: '/products',
+        element: <Products />
       }
     ]
   }
