@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
     return (
         <div className='mt-20'>
             <section className="flex flex-col sm:flex-row overflow-x-none">
-                <div className="flex flex-col w-screen">
+                <div className="flex flex-col w-screen z-20">
                     <div className="lg:m-16 md:m-12 font-poppins">
                         <div className="p-1 text-xs mb-2 flex items-center bg-gray-800/40 bg-gradient-to-r from-gray-700 w-64 rounded">
                             <div className="flex justify-center items-center bg-gray-500/40 rounded-full w-6 h-6"><b className='gradient-text text-base'>%</b></div>
@@ -24,11 +24,10 @@ export const Home: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="flex relative md:my-0 my-10">
+                <div className="flex w-100 md:my-0 my-10">
                     <div className='absolute top-0 w-2/3 h-1/2 z-0 pink-gradient' />
                     <div className='absolute rounded-full w-full h-5/6 bottom-40 z-10 white-gradient' />
                     <div className='absolute w-1/2 h-1/2 right-64 bottom-32 z-0 blue-gradient' />
-                    {/* <img src={cat_paw_hovering_card} className='w-96 lg:w-9/12 z-20' /> */}
                     <img src={cat_paw_hovering_card} className='relative w-full z-20' />
                 </div>
             </section>
@@ -48,7 +47,10 @@ export const Home: React.FC = () => {
             </section>
 
             <section className='h-screen flex flex-row items-center'>
-                <div className='ml:24 lg:ml-36'>
+                <div className='absolute w-1/3 h-1/2 z-0 pink-gradient' />
+                <div className='absolute rounded-full w-full h-5/6 z-10 white-gradient' />
+                <div className='absolute w-1/2 h-1/2 left-64 z-0 blue-gradient' />
+                <div className='ml:24 lg:ml-36 z-20'>
                     <h2 className='text-3xl lg:text-6xl'>What is an NFT?</h2>
                     <p className='text-gray-400 text-sm lg:text-xl lg:w-2/3 mb-5'>
                         Non-fungible-token <br />
