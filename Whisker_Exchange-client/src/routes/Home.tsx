@@ -13,7 +13,7 @@ export const Home: React.FC = () => {
         <div className='mt-20'>
             <section className="flex flex-col sm:flex-row overflow-x-none">
                 <div className="flex flex-col w-screen z-20">
-                    <div className="lg:m-16 md:m-12 font-poppins">
+                    <div className="lg:m-16 md:m-12 m-10 font-poppins">
                         <div className="p-1 text-xs mb-2 flex items-center bg-gray-800/40 bg-gradient-to-r from-gray-700 w-64 rounded">
                             <div className="flex justify-center items-center bg-gray-500/40 rounded-full w-6 h-6"><b className='gradient-text text-base'>%</b></div>
                             <div className="ml-2"><b>20%</b> Discount for your <b>first purchase</b></div>
@@ -24,11 +24,11 @@ export const Home: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="flex w-100 md:my-0 my-10">
+                <div className="flex md:my-0 my-10">
                     <div className='absolute top-0 w-2/3 h-1/2 z-0 pink-gradient' />
                     <div className='absolute rounded-full w-full h-5/6 bottom-40 z-10 white-gradient' />
                     <div className='absolute w-1/2 h-1/2 right-64 bottom-32 z-0 blue-gradient' />
-                    <img src={cat_paw_hovering_card} className='relative w-full z-20' />
+                    <img src={cat_paw_hovering_card} className='relative float-right w-1/2 lg:w-full z-20' />
                 </div>
             </section>
 
