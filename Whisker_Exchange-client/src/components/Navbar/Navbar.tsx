@@ -44,8 +44,8 @@ export const Navbar: React.FC = () => {
                     <img className='logo' src={logo} alt="logo" />
                     <ul className='flex flex-row ml-auto mr-32 hidden sm:flex'>
                         {NavbarData.map((item: any, index: any) => (
-                            <li className='list-none'>
-                                <Link className='flex flex-row cursor-pointer' to={item.path}>
+                            <li className='list-none ml-4'>
+                                <Link className='flex flex-row cursor-pointer text-gray-400 hover:text-white' to={item.path}>
                                     {item.icon}
                                     <span>{item.title}</span>
                                 </Link>
