@@ -20,15 +20,15 @@ export const Home: React.FC = () => {
                         </div>
                         <h1 className="text-4xl lg:text-7xl">NEXT</h1>
                         <h1 className="gradient-text my-3 text-4xl lg:text-7xl">GENERATION</h1>
-                        <h1 className="text-4xl lg:text-6xl">NFT EXCHANGING.</h1>
+                        <h1 className="text-4xl lg:text-7xl">NFT EXCHANGING.</h1>
                     </div>
                 </div>
 
                 <div className="flex md:my-0 my-10">
-                    <div className='absolute top-0 w-2/3 h-1/2 z-0 pink-gradient' />
-                    <div className='absolute rounded-full w-full h-5/6 bottom-40 z-10 white-gradient' />
-                    <div className='absolute w-1/2 h-1/2 right-64 bottom-32 z-0 blue-gradient' />
-                    <img src={cat_paw_hovering_card} className='relative float-right w-1/2 lg:w-full z-20' />
+                    <div className='absolute top-0 w-2/3 h-full z-0 pink-gradient' />
+                    <div className='absolute rounded-full w-full h-5/6 bottom-40 z-[1] white-gradient' />
+                    <div className='absolute w-1/2 h-1/2 right-32 bottom-32 z-0 blue-gradient' />
+                    <img src={cat_paw_hovering_card} className='relative float-right w-full h-1/3 md:h-full z-20' />
                 </div>
             </section>
 
@@ -47,9 +47,9 @@ export const Home: React.FC = () => {
             </section>
 
             <section className='h-screen flex flex-row items-center'>
-                <div className='absolute w-1/3 h-1/2 z-0 pink-gradient' />
-                <div className='absolute rounded-full w-full h-5/6 z-10 white-gradient' />
-                <div className='absolute w-1/2 h-1/2 left-64 z-0 blue-gradient' />
+                <div className='absolute w-1/3 h-1/3 left-0 z-0 pink-gradient' />
+                <div className='absolute rounded-full w-full h-1/2 z-[1] white-gradient' />
+                <div className='absolute w-1/2 h-1/2 left-80 z-0 blue-gradient' />
                 <div className='ml:24 lg:ml-36 z-20'>
                     <h2 className='text-3xl lg:text-6xl'>What is an NFT?</h2>
                     <p className='text-gray-400 text-sm lg:text-xl lg:w-2/3 mb-5'>
