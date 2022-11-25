@@ -24,5 +24,9 @@ export const NavbarData:any = [
         path: "#",
         icon: <ArrowLeftOnRectangleIcon className='h-6 w-6 mx-5' />,
         cName: "nav-text"
+    {
+        title: "Cart",
+        path: "/shopping-cart",
+        icon: <ShoppingCartIcon className='h-6 w-6 mx-3' />,
     }
 ]
