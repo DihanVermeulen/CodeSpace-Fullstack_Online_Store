@@ -43,39 +43,60 @@ export const Products = () => {
                     <article className="w-full rounded h-80 mb-8">
                         <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
                         <div className="h-1/3 bg-white rounded-b p-4">
-                        <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
-                        <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
-                    </div>
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-                <article className="w-full rounded h-80 mb-8">
-                    <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
-                    <div className="h-1/3 bg-white rounded-b" />
-                </article>
-            </section>
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                    <article className="w-full rounded h-80 mb-8">
+                        <div className="flex justify-center items-center h-3/4 rounded-t bg-gray-300 dark:bg-gray-700" />
+                        <div className="h-1/3 bg-white rounded-b p-4">
+                            <div className="w-1/3 h-[20px] bg-gray-300 rounded mb-2" />
+                            <div className="w-1/4 h-[20px] bg-gray-300 rounded" />
+                        </div>
+                    </article>
+                </section>
             </div >
         )
     }
