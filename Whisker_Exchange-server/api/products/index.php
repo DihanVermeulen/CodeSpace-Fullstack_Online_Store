@@ -8,8 +8,14 @@ include '../src/includes/headers.php';
 
 $app = AppFactory::create();
 
-$app->get('/', function (Request $request, Response $response, $args) {
-    $response->getBody()->write("Hello world!");
+$app->get('/products', function (Request $request, Response $response, $args) {
+    include_once('../src/conn/DbConn.php');
+
+    $query = "SELECT * FROM products";
+
+    $result = $db_connection->query($query);
+    
+    $response->getBody()->write($result);
     return $response;
 });
 
