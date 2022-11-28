@@ -10,8 +10,8 @@ import '../utils/utils.css';
 
 export const Home: React.FC = () => {
     return (
-        <div className='mt-20'>
-            <section className="flex flex-col sm:flex-row overflow-x-none">
+        <div className='mt-20 overflow-x-hidden'>
+            <section className="flex flex-col flex-1 md:flex-row overflow-x-none">
                 <div className="flex flex-col w-screen z-20">
                     <div className="lg:m-16 md:m-12 m-10 font-poppins">
                         <div className="p-1 text-xs mb-2 flex items-center bg-gray-800/40 bg-gradient-to-r from-gray-700 w-64 rounded">
@@ -24,11 +24,11 @@ export const Home: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="flex md:my-0 my-10">
-                    <div className='absolute top-0 w-2/3 h-full z-0 pink-gradient' />
-                    <div className='absolute rounded-full w-full h-5/6 bottom-40 z-[1] white-gradient' />
-                    <div className='absolute w-1/2 h-1/2 right-32 bottom-32 z-0 blue-gradient' />
-                    <img src={cat_paw_hovering_card} className='relative float-right w-full h-1/3 md:h-full z-20' />
+                <div className="flex flex-row justify-end md:my-0 my-10">
+                    <div className='absolute top-0 w-2/3 h-1/3 z-0 pink-gradient' />
+                    <div className='absolute rounded-full w-full h-1/2 bottom-40 z-[1] white-gradient' />
+                    <div className='absolute w-1/2 h-1/2 right-20 bottom-32 z-0 blue-gradient' />
+                    <img src={cat_paw_hovering_card} className='relative float-right w-[400px] h-[520px] lg:w-full lg:h-full z-20' />
                 </div>
             </section>
 
@@ -49,8 +49,8 @@ export const Home: React.FC = () => {
             <section className='h-screen flex flex-row items-center'>
                 <div className='absolute w-1/3 h-1/3 left-0 z-0 pink-gradient' />
                 <div className='absolute rounded-full w-full h-1/2 z-[1] white-gradient' />
-                <div className='absolute w-1/2 h-1/2 left-80 z-0 blue-gradient' />
-                <div className='ml:24 lg:ml-36 z-20'>
+                <div className='absolute w-1/2 h-1/2 z-0 blue-gradient' />
+                <div className='ml-20 lg:ml-36 z-20'>
                     <h2 className='text-3xl lg:text-6xl'>What is an NFT?</h2>
                     <p className='text-gray-400 text-sm lg:text-xl lg:w-2/3 mb-5'>
                         Non-fungible-token <br />
@@ -59,14 +59,14 @@ export const Home: React.FC = () => {
                     <Button variant='gradient'>Get Started</Button>
                 </div>
 
-                <a href='https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq' target='_blank'>
+                <a href='https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq' target='_blank' className='z-[3]'>
                     <div className='lg:w-60 lg:h-60 w-32 h-32 rounded-full border-2 flex flex-row justify-center items-center border-cyan-300 
-                lg:-translate-x-80 lg:-translate-y-32 md:-translate-x-32 md:-translate-y-24 cursor-pointer'>Find Out More</div>
+                lg:-translate-x-74 lg:-translate-y-32 md:-translate-x-32 md:-translate-y-24 -translate-y-24 -translate-x-16 cursor-pointer'>Find Out More</div>
                 </a>
             </section>
 
             <section className='h-screen flex flex-col items-center justify-center'>
-                <article className='flex flex-row hover:bg-gray-700/50 items-center p-3 rounded lg:w-1/2'>
+                <article className='flex flex-row hover:bg-gray-700/50 items-center p-3 rounded w-2/3 lg:w-1/2'>
                     <img src={secured} alt='secured' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>100% Secured</h3>
@@ -75,7 +75,7 @@ export const Home: React.FC = () => {
                     </div>
                 </article>
 
-                <article className='flex flex-row hover:bg-gray-700/50 items-center p-3 rounded lg:w-1/2'>
+                <article className='flex flex-row hover:bg-gray-700/50 items-center p-3 rounded w-2/3 lg:w-1/2'>
                     <img src={star} alt='star' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>Rewards</h3>
@@ -86,7 +86,7 @@ export const Home: React.FC = () => {
                     </div>
                 </article>
 
-                <article className='flex flex-row hover:bg-gray-700/50 items-center p-3 rounded lg:w-1/2'>
+                <article className='flex flex-row hover:bg-gray-700/50 items-center p-3 rounded w-2/3 lg:w-1/2'>
                     <img src={transfer} alt='transfer' className='lg:w-16 lg:h-16 pr-3' />
                     <div className='flex flex-col justify-start'>
                         <h3 className='lg:text-2xl'>Balance Transfer</h3>
